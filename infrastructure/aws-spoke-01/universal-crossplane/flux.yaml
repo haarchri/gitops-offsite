@@ -8,6 +8,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: aws-spoke-01
-  path: ./infrastructure/universal-crossplane/resources
+  path: ./infrastructure/aws-spoke-01/universal-crossplane/resources
   timeout: 5m
   prune: true
