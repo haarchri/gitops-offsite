@@ -1,0 +1,13 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: universal-crossplane
+  namespace: flux-system
+spec:
+  interval: 5m
+  sourceRef:
+    kind: GitRepository
+    name: caas-offsite-01
+  path: ./infrastructure/caas-offsite-01/universal-crossplane/resources
+  timeout: 5m
+  prune: true
